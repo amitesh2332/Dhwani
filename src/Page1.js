@@ -22,9 +22,7 @@ export default class Page1 extends PureComponent {
     setTimeout(() => {
       if (this.state.call === 1) {
         axios
-          .get(`https://reqres.in/api/users?page=2`, {
-            headers: { "app-id": "60c9448aa9b59526b9010cfc" },
-          })
+          .get(`https://reqres.in/api/users?page=2`)
           .then(({ data }) => {
             console.log(data);
             this.setState({
