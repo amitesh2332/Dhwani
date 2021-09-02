@@ -1,6 +1,6 @@
 {
   "name": "dhwani",
-  "homepage": "https://github.com/amitesh2332/Dhwani",
+  "homepage": "https://github.com/amitesh2332/dhwani",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,9 +18,9 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
