@@ -1,6 +1,7 @@
 {
-  "homepage": "https://amitesh2332.github.io/dhwani",
+  
   "name": "dhwani",
+  "homepage": "https://amitesh2332.github.io/dhwani",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
