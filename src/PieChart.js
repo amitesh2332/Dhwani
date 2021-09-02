@@ -128,9 +128,9 @@ export default class Page2 extends Component {
     };
   }
 
-  handleClickArg = () => {
-    this.state.call = 0;
-  };
+  // handleClickArg = () => {
+  //   this.state.call = 0;
+  // };
 
   async componentDidMount() {
     this.setState({ loading: true });
@@ -154,13 +154,13 @@ export default class Page2 extends Component {
   render() {
     let series = [];
     Object.keys(this.state.data).map((val) => {
-      series.push(parseInt(this.state.data[val].salary));
+      return series.push(parseInt(this.state.data[val].salary));
     });
     return (
       <div className="main-div">
         <div className="card">
           <div className="prime-btn">
-            <Link to={"/"} onClick={this.handleClickArg}>
+            <Link to={"/"}>
               <button>Go to Page1 &rarr;</button>
             </Link>
           </div>

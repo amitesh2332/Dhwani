@@ -1,11 +1,11 @@
-import React, { PureComponent } from "react";
+import React from "react";
 import "./App.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Loader from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
-export default class Page1 extends PureComponent {
+class Page1 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,9 +14,9 @@ export default class Page1 extends PureComponent {
       call: 1,
     };
   }
-  handleClickArg = () => {
-    this.state.call = 0;
-  };
+  // handleClickArg = () => {
+  //   this.state.call = 0;
+  // };
   componentDidMount() {
     this.setState({ loading: true });
     setTimeout(() => {
@@ -40,7 +40,7 @@ export default class Page1 extends PureComponent {
       <div className="main-div">
         <div className="card">
           <div className="prime-btn">
-            <Link to={"/piechart"} onClick={this.handleClickArg}>
+            <Link to={"/piechart"}>
               <button>Go to Page2 &rarr;</button>
             </Link>
           </div>
@@ -82,3 +82,4 @@ export default class Page1 extends PureComponent {
     );
   }
 }
+export default Page1;
