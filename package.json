@@ -1,6 +1,6 @@
 {
-  "name": "task",
-  "homepage": "https://github.com/amitesh2332/dhwani",
+    "homepage": "https://amitesh2332.github.io/dhwani",
+  "name": "dhwani",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
